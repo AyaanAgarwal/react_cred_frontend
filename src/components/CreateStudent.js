@@ -11,7 +11,7 @@ function CreateStudent()
         setArr(childData);
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
         event.preventDefault(   )
         const data = {name: arr[0],email:arr[1],rollNo:arr[2]};
         Axios.post("https://react-cred-deployment1.onrender.com/studentRoute/create-student",data)
